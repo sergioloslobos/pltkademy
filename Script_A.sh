@@ -1,6 +1,6 @@
 #! /bin/bash
 
-a=$(ls -l | head -n 100 | '{print $9}')
+a=$(ls -l | head -n 100 | awk '{print $9}')
 
 for i in $a;
 do
